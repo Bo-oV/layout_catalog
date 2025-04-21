@@ -5,22 +5,31 @@
   padding: 0 50px;
   height: 60px;
   width: 100%;
+  box-shadow: 0 2px 4px 0 #0000000d;
 }
 
-.list {
+.menu__item {
+  display: flex;
+  height: 15px;
   margin: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   height: 60px;
   list-style: none;
   white-space: nowrap;
 }
 
-.link {
+.menu__link {
+  height: 15px;
   font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 22px;
@@ -30,7 +39,7 @@
   transition: color 0.3s ease;
 }
 
-.link::after {
+.menu__link::after {
   position: absolute;
   content: '';
   display: block;
@@ -43,10 +52,14 @@
   transition: width 0.3s ease;
 }
 
-.link.is-active::after {
+.menu__link.is-active::after {
   width: 100%;
 }
 
-.link:hover {
+.menu__link:hover {
+  color: $color-header;
+}
+
+.is-active {
   color: $color-header;
 }

@@ -110,24 +110,24 @@
 }
 
 .grid {
-  --coloms-grid: 1;
+  --columns-grid: 1;
 
   display: grid;
   place-content: center;
   place-items: center;
   gap: 48px 46px;
   padding: 50px 40px;
-  grid-template-columns: repeat(var(--coloms-grid), 200px);
+  grid-template-columns: repeat(var(--columns-grid), 200px);
 
   @media (min-width: 488px) {
-    --coloms-grid: 2;
+    --columns-grid: 2;
   }
 
   @media (min-width: 768px) {
-    --coloms-grid: 3;
+    --columns-grid: 3;
   }
 
   @media (min-width: 1024px) {
-    --coloms-grid: 4;
+    --columns-grid: 4;
   }
 }
