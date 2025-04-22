@@ -23,12 +23,13 @@
 }
 
 .menu {
-  padding: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: nowrap;
   height: 60px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   white-space: nowrap;
 }
